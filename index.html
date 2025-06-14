@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Site Info-->
+    <title>Hanna Duker | Experience designer</title>
+    <!--<base href="/portfolio/">-->
+    <meta name="description" content="Descripotion to do" />
+    <meta name="keywords" content="keywords to do" />
+
+    <!--Open Graph Protocol-->
+
+    <meta property="og:title" content="HannaDuker" />
+    <meta property="og:url" content="todoURL" />
+    <meta property="og:description" content="Todo" />
+
+    <!-- <meta property="og:image" content="URL" /> TODO -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+
+    <!--  Stylesheet  -->
+    <link rel="stylesheet" type="text/css" href="dist/css/styles.css">
+    <!--  Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20f502f007.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!--  Navigation bar -->
+    <header>
+        <nav id="wide-nav">
+            <ul class="nav-tabs">
+                <li><a href="#Contact" class="nav-button" role="button"><span class="text">Contact me</span></a></li>
+                <li><a href="./Hanna_Duker_Resume.pdf" target="_blank" class="nav-button"
+                        role="button"><span>Resume</span></a></li>
+                <li><a href="#Experience" class="nav-button" role="button"><span>Skills</span></a>
+                </li>
+                <li><a href="#Work" class="nav-button" role="button"><span>Case studies</span></a></li>
+            </ul>
+            <a href="index.html"><img src="./img/Logo.svg" class="logo" alt="Logo for Hanna Duker"></a>
+        </nav>
+        <nav id="skinny-nav">
+            <a href="javascript:void(0);" class="nav-button-icon icon" onclick="menuToggle()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            <div class="nav-tabs hide" id="js-menu">
+                <ul class="dropdown">
+                    <li><a class="skinny-nav-button" href="#Work">Case studies</a></li>
+                    <li><a class="skinny-nav-button" href="#Experience">Skills</a></li>
+                    <li><a class="skinny-nav-button" href="./Hanna_Duker_Resume.pdf">Resume</a></li>
+                    <li><a class="skinny-nav-button" href="#Contact">Contact me</a></li>
+                </ul>
+            </div>
+            <img src="./img/Logo.svg" class="logo" alt="Logo for Hanna Duker UX/UI Designer">
+        </nav>
+    </header>
+    <main>
+        <!--  Hero section -->
+        <div class="hero">
+            <!--  Picture and desctipion -->
+            <div class="hero-content animate-on-scroll">
+                <div class="hero-cover">
+                    <div class="hero-copy">
+                        <div class="hero-tagline slide-up'">
+                            <p id="hero-p">I'm Hanna - </p>
+                            <p id="chip"> an experience designer</p>
+                            <p id="hero-p">who <b>thrives in complexity</b>. </p>
+                        </div>
+                        <h1 id="hero-header" class="slide-up delay-100">I design systems, not just screens.
+                        </h1>
+                        <p id="hero-p" class=" slide-up delay-200">With a foundation in architecture, I approach design
+                            through the lens of place-making—connecting physical environments, digital systems, and
+                            human interactions, with an eye for how environments shape experience—and how design can
+                            respond.
+                        </p>
+                        <p id="hero-p" class="slide-up delay-300 "><b>In a world where challenges are increasingly
+                                interconnected, I use systems thinking, research, and strategy to design resilient,
+                                human-centred solutions</b>.
+                        </p>
+                        <div class="hero-buttons slide-up delay-400">
+                            <a href="#Experience" class="button-1" role="button"><span class="text">Explore my
+                                    skills</span></a>
+                            <a href="#Work" class="button-1" role="button"><span class="text">See my
+                                    work
+                                </span></a>
+                        </div>
+                    </div>
+                    <div class="hero-image-wrapper slide-up delay-400">
+                        <img class="hero-img" src="./img/Hero-profile.svg" alt="Overlay Image">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Where I have experience -->
+        <!--Description -->
+        <section id="Experience" class="simple-grey">
+            <div class="container-basic animate-on-scroll">
+                <div class="header-expand special slide-up">
+                    <h2>Skills and competencies</h2>
+                </div>
+
+                <!--Exoerience sub title -->
+                <p class="chip-subdiv slide-up delay-100"><b>I bring a systems- and strategy-informed approach across
+                        these areas:</b>
+                </p>
+                <div class="cards scale-in-image delay-200">
+                    <!--Cards stack left  -->
+                    <div class="experience">
+                        <div class="faq">
+                            <h4 class="faq-title">Systems thinking & framework design </h4>
+                            <p class="faq-text">
+                                I’ve designed human-centered solutions for urban regeneration and public
+                                infrastructure
+                                projects. This includes research, co-design, and systems mapping to develop
+                                spatial and
+                                service-oriented strategies.</p>
+                            <a href="cs1-nyanga.html" class="faq-link" role="button"><span class="text">See
+                                    case study:
+                                    Aligning Policy with Practice
+                                    >
+                                </span></a>
+                            <button class="faq-toggle">
+                                <img src="./img/+.svg" class="expand" alt="Expand card">
+                                <img src="./img/minus.svg" class="collapse" alt="Expand card"></button>
+                        </div>
+                        <div class="faq">
+                            <h4 class="faq-title">Social impact & sustainability</h4>
+                            <p class="faq-text">For eight years, I worked in the South African public sector on
+                                projects
+                                focused on equity, safety, and inclusivity—designing for sustainable impact in
+                                underserved
+                                communities. </p>
+                            <button class="faq-toggle">
+                                <img src="./img/+.svg" class="expand" alt="Expand card">
+                                <img src="./img/minus.svg" class="collapse" alt="Expand card"></button>
+                        </div>
+                        <div class="faq">
+                            <h4 class="faq-title">Data-informed product design </h4>
+                            <p class="faq-text">As the UX consultant at DataQ, I designed dashboards and tools that turn
+                                complex data
+                                into
+                                clear, actionable experiences for users across skill levels. </p>
+                            <!--<a href="#TODO" class="faq-link" role="button"><span class="text">See case
+                                    study (coming soon)</span></a>-->
+                            <button class="faq-toggle">
+                                <img src="./img/+.svg" class="expand" alt="Expand card">
+                                <img src="./img/minus.svg" class="collapse" alt="Expand card"></button>
+                        </div>
+
+                    </div>
+                    <!--Cards right  -->
+                    <div class="experience scale-in-image delay-300">
+                        <div class="faq">
+                            <h4 class="faq-title">Cross cultural research & facilitation </h4>
+                            <p class="faq-text">At VPUU and SUN Development, I conducted ethnographic and
+                                contextual
+                                research with diverse communities in high-stakes environments. I developed
+                                research
+                                frameworks and co-led participatory design with non-design stakeholders. </p>
+                            <a href="cs1-nyanga.html" class="faq-link" role="button"><span class="text">See
+                                    case study:
+                                    Aligning Policy with Practice
+                                    ></span></a>
+                            <button class="faq-toggle">
+                                <img src="./img/+.svg" class="expand" alt="Expand card">
+                                <img src="./img/minus.svg" class="collapse" alt="Expand card"></button>
+                        </div>
+                        <div class="faq">
+                            <h4 class="faq-title">Project planning & coordination </h4>
+                            <p class="faq-text">In my roles as a Principal Architect co-leading a small practice and a
+                                senior architect across public and private sectors, I managed cross-functional teams,
+                                stakeholder
+                                alignment, and production of deliverables within tight regulatory and
+                                construction
+                                timelines.</p>
+                            <button class="faq-toggle">
+                                <img src="./img/+.svg" class="expand" alt="Expand card">
+                                <img src="./img/minus.svg" class="collapse" alt="Expand card"></button>
+                        </div>
+                        <div class="faq">
+                            <h4 class="faq-title">Enterprise UX & B2B software </h4>
+                            <p class="faq-text">
+                                As a consultant in the Pondo team, I design enterprise-grade tools and back-office
+                                platforms that balance
+                                usability with technical complexity.</p>
+
+                            <a href="cs2-design.html" class="faq-link" role="button"><span class="text">See case
+                                    study: Designing
+                                    a design system >
+                                </span></a>
+                            <button class="faq-toggle">
+                                <img src="./img/+.svg" class="expand" alt="Expand card">
+                                <img src="./img/minus.svg" class="collapse" alt="Expand card"></button>
+                        </div>
+                    </div>
+                </div>
+                <p class="chip-subdiv slide-up delay-400"><b>I'm skilled in</b></p>
+                <div class="cards">
+                    <!--Cards stack 1  -->
+                    <div class="experience scale-in-image delay-500 ">
+
+                        <div class="faq">
+                            <h4 class="faq-title">Interaction design</h4>
+                            <p class="faq-text">I design intuitive interaction patterns and build scalable design
+                                systems that support clarity, consistency, and usability. My work includes auditing and
+                                refining flows, defining responsive behaviours, and creating reusable components that
+                                align user needs with technical implementation. </p>
+                            <!--
+                            <a href="#TODO" class="faq-link" role="button"><span class="text">See case
+                                    study (coming soon)</span></a> -->
+                            <button class="faq-toggle">
+                                <img src="./img/+.svg" class="expand" alt="Expand card">
+                                <img src="./img/minus.svg" class="collapse" alt="Expand card"></button>
+                        </div>
+                        <div class="faq">
+                            <h4 class="faq-title">User research & usability testing </h4>
+                            <p class="faq-text">I’ve led, supported, and advocated for research across a range of
+                                projects, often where time and budget constraints left little room for it. This has
+                                required creativity, persistence, and strategic problem-solving—finding ways to
+                                understand user needs through informal, adaptive methods when formal support wasn’t
+                                available.
+                            </p>
+                            <!--
+                            <a href="#TODO" class="faq-link" role="button"><span class="text">See case study (Coming
+                                    soon) 
+                                </span></a>-->
+                            <button class="faq-toggle">
+                                <img src="./img/+.svg" class="expand" alt="Expand card">
+                                <img src="./img/minus.svg" class="collapse" alt="Expand card"></button>
+                        </div>
+                        <div class="faq">
+                            <h4 class="faq-title">Visual design </h4>
+                            <p class="faq-text">I design clean, accessible interfaces that support clarity and
+                                usability. From typography and spacing to layout and colour, I focus on visual systems
+                                that scale—reinforcing consistency across complex products without sacrificing
+                                flexibility.
+                            </p>
+                            <!--<a href="#TODO" class="faq-link" role="button"><span class="text">See case study (Coming
+                                    soon)
+                                </span></a>-->
+                            <button class="faq-toggle">
+                                <img src="./img/+.svg" class="expand" alt="Expand card">
+                                <img src="./img/minus.svg" class="collapse" alt="Expand card"></button>
+                        </div>
+                    </div>
+                    <!--Cards stack 2  -->
+                    <div class="experience scale-in-image delay-600">
+
+                        <div class="faq">
+                            <h4 class="faq-title">Stakeholder management </h4>
+                            <p class="faq-text">I build alignment across diverse teams by translating user needs,
+                                technical constraints, and business goals into shared priorities. From workshops to
+                                one-on-ones, I adapt my communication to different stakeholders—ensuring design
+                                decisions are understood, supported, and actionable.</p>
+                            <button class="faq-toggle">
+                                <img src="./img/+.svg" class="expand" alt="Expand card">
+                                <img src="./img/minus.svg" class="collapse" alt="Expand card"></button>
+                        </div>
+                        <div class="faq">
+                            <h4 class="faq-title">Iterative design & prototyping </h4>
+                            <p class="faq-text">I use rapid prototyping to explore ideas, test assumptions, and refine
+                                interactions before development. Whether low-fi or high-fi, my prototypes are tools for
+                                alignment—helping teams gather feedback early and iterate with confidence. </p>
+                            <!--<a href="#TODO" class="faq-link" role="button"><span class="text">See case study (coming
+                                    soon)
+                                </span></a>-->
+                            <button class="faq-toggle">
+                                <img src="./img/+.svg" class="expand" alt="Expand card">
+                                <img src="./img/minus.svg" class="collapse" alt="Expand card"></button>
+                        </div>
+                        <div class="faq">
+                            <h4 class="faq-title">Frontend handoff & dev collaboration </h4>
+                            <p class="faq-text">I collaborate closely with developers to ensure designs are clear,
+                                feasible, and accessible. With a working knowledge of HTML, CSS, and JavaScript, I can
+                                anticipate constraints, reduce ambiguity, and support a smoother handoff—so what gets
+                                built aligns with the design intent. </p>
+                            <!--<a href="#TODO" class="faq-link" role="button"><span class="text">See case study (coming
+                                    soon)
+                                </span></a>-->
+                            <button class="faq-toggle">
+                                <img src="./img/+.svg" class="expand" alt="Expand card">
+                                <img src="./img/minus.svg" class="collapse" alt="Expand card"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons-nested slide-up delay-800">
+                    <a href="https://www.linkedin.com/in/hanna-duker-26827620a/" class="button-1" role="button"><span
+                            class="text">Visit my LinkedIn</span></a>
+                    <a href="./Hanna_Duker_Resume.pdf" target="_blank" class="button-1" role="button"><span
+                            class="text">View my
+                            resume
+                        </span></a>
+                </div>
+            </div>
+        </section>
+        <!--End of experienc section-->
+        <!--Work-->
+        <section id="Work" class="white">
+            <div class="container-basic animate-on-scroll">
+                <div class="slide-up">
+                    <h2>Case studies</h2>
+                </div>
+
+                <div class="work-cover">
+                    <div class="work-gallery scale-in-image delay-100">
+                        <div class="work-card ">
+                            <div class="work-card-img nyanga">
+                                <img src="./img/Nunu-cover-NObackground.png" alt="Project 1">
+                            </div>
+
+                            <h5>Aligning policy with practice: Co-creating inclusive marketplaces</h5>
+                            <div class="work-tagline">
+                                <p class="cs-p">
+                                    Used systems thinking and
+                                    human-centred research insights to deliver an inclusive, actionable urban renewal
+                                    strategy for government.
+                                </p>
+                            </div>
+                            <a href="cs1-nyanga.html" class="work-link">View case study →</a>
+
+                        </div>
+                        <div class="work-card ">
+                            <div class="work-card-img">
+                                <img src="./img/2xDS-preview.png" alt="ComUnity Developer Toolkit">
+                            </div>
+
+                            <h5>Designing a design system: ComUnity Developer Toolkit</h5>
+                            <div class="work-tagline">
+                                <p class="cs-p">
+                                    Led the creation of a scalable design system in Figma, enabling faster delivery,
+                                    better
+                                    collaboration, and long-term UX consistency.
+                                </p>
+                            </div>
+                            <a href="cs2-design.html" class="work-link">View case study →</a>
+
+                        </div>
+                        <div class="work-card ">
+                            <div class="work-card-img">
+                                <img src="./img/Alert-preview.png" alt="Alerts framework">
+                            </div>
+
+                            <h5>Designing an alert framework for developer mental models</h5>
+                            <div class="work-tagline">
+                                <p class="cs-p">
+                                    Designed a scalable alerts framework for a developer-facing platform,
+                                    enhancing the MVP’s user experience and establishing a robust foundation for
+                                    future growth.
+                                </p>
+                            </div>
+                            <a href="cs3-alerts.html" class="work-link">View case study →</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-up delay-400">
+                    <h2 class="special-heading">Currently designing</h2>
+                </div>
+                <div class="work-cover">
+                    <div class="work-gallery scale-in-image delay 600">
+                        <div class="work-card ">
+                            <div class="work-card-img">
+                                <img src="./img/Maroon.png" alt="Health insights tool">
+                            </div>
+
+                            <h5>Visualising health insights: A tool for nurses</h5>
+                            <div class="work-tagline">
+                                <p class="cs-p">
+                                    Currently designing a dashboard that helps nurses at Stellenbosch University Student
+                                    Health quickly identify patients at risk.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="work-card ">
+                            <div class="work-card-img">
+                                <img src="./img/Fieldbar.svg" alt="Fieldbar logistics">
+                            </div>
+
+                            <h5>Fieldbar: Improving inventory management processes</h5>
+                            <div class="work-tagline">
+                                <p class="cs-p">
+                                    Designing a suite of dashboards to enable strategic decision-making across
+                                    inventory, sales and production.
+                                </p>
+
+
+
+                            </div>
+                        </div>
+                        <div class="work-card ">
+                            <div class="work-card-img">
+                                <img src="./img/DataQ.svg" alt="DataQ value communication">
+                            </div>
+
+                            <h5>Helping DataQ communicate their value—clearly</h5>
+                            <div class="work-tagline">
+                                <p class="cs-p">
+                                    Currently helping DataQ re-frame their value proposition and brand through the
+                                    design and build of a new website.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Contact" class="simple-grey">
+            <div class="container-basic animate-on-scroll">
+                <div class="slide-up">
+                    <h2>Get in touch</h2>
+                </div>
+                <div class="description slide-up delay-100">
+                    <p class="special">
+                        I’m drawn to complex, impact-driven projects. I thrive in remote
+                        teams but value collaboration, clear communication, and the energy of working with others. Open
+                        to global roles—remote or on-site.
+                    </p>
+                </div>
+                <div class="contact-details slide-up delay-200">
+                    <p><strong>Email:</strong> <a href="mailto:hannaduker@gmail.com">hanna.duker@gmail.com</a></p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hanna-duker-26827620a/"
+                            target="_blank" rel="noopener">linkedin.com/in/hannaduker</a></p>
+                    <p><strong>Location:</strong> Based in Cape Town · Open to international on-site or remote roles</p>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="site-footer white">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <img src="./img/Logo.svg" alt="Hanna Duker logo" class="footer-logo">
+                        <p class="footer-tagline">Designing systems, not just screens.</p>
+                    </div>
+                    <div class="footer-nav">
+                        <h5>Explore</h5>
+                        <ul>
+                            <li><a href="#Work">Case studies</a></li>
+                            <li><a href="#Experience">Skills</a></li>
+                            <li><a href="./Hanna_Duker_Resume.pdf" target="_blank">Resume</a></li>
+                            <li><a href="#Contact">Contact me</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h5>Get in touch</h5>
+                        <p>Email: <a href="mailto:hannaduker@gmail.com">hanna.duker@gmail.com</a></p>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/hanna-duker-26827620a/" target="_blank"
+                                rel="noopener">linkedin.com/in/hannaduker</a></p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2025 Hanna Duker. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="dist/js/main.js" defer></script>
+    </main>
+</body>
+
+</html>
