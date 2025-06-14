@@ -1,0 +1,43 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website - UK english",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+    "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Edge versions",
+    "last 2 Safari versions",
+    "last 2 iOS versions",
+    "last 2 Android versions",
+    "Firefox ESR",
+    "> 0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hanna-dkr/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Hanna-dkr/portfolio/issues"
+  },
+  "homepage": "https://github.com/Hanna-dkr/portfolio#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "autoprefixer": "^10.4.21",
+    "core-js": "^3.43.0",
+    "normalize.css": "^8.0.1",
+    "postcss": "^8.5.5",
+    "postcss-cli": "^11.0.1"
+  }
+}
