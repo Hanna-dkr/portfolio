@@ -11,12 +11,14 @@
     --gray-0: #F9FAFB;
     --gray: #F1F3F6;
     --gray-2: #eaeef2;
+    --gray-4: #DBE0E5;
     --green-1: #B0E9D1;
     --green-2: #B0E9E0;
     --green-3: #00846C;
     --green-4: #016E5A;
     --green-5: #006D6D;
     --green-6: #008080;
+    --green-7: #005656;
     --card-1: #771660;
     --card-2: #9d305b;
     --prim-1: #8a245e;
@@ -336,60 +338,57 @@ h1 {
 /* secondary button */
 .button-2 {
   position: relative;
+  box-sizing: border-box;
+  overflow: hidden;                       /* clip the wipe */
   font-weight: 500;
   font-size: 18px;
+  border: 2px solid var(--green-5);
   border-radius: 8px;
+  /* 1) gradient lives here */
+  background: linear-gradient(45deg, var(--gray-0), var(--gray-4));
+  color: var(--green-5);
   cursor: pointer;
-  border: none;
-
-  color: var(--black-1);
-  text-decoration: underline;
-  overflow: hidden;
-  -moz-user-select: none;
-       user-select: none;
-  -webkit-user-select: none;
+  user-select: none;
   touch-action: manipulation;
 }
 .button-2 span {
-position: relative;
-z-index: 10;
-transition: color 0.4s;
-display: inline-flex;
-align-items: center;
-padding: 20px;
-}
-.button-2::before,
-.button-2::after {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-z-index: 0;
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  padding: 18px;
+  transition: color 0.4s;
 }
 .button-2::before {
-
-background: var(white);
-width: 120%;
-left: -10%;
-transform: skew(30deg);
-transition: transform 0.3s cubic-bezier(0.445, 0.050, 0.550, 0.950);
+  content: "";
+  position: absolute;
+  top: 0; left: -10%;
+  width: 120%; height: 100%;
+  background: var(--gray-0);              /* solid, matching left-stop */
+  transform: skew(30deg);                 /* start skewed in place */
+  transition: transform 0.2s cubic-bezier(0.445,0.050,0.550,0.950);
+  z-index: 0;
 }
 .button-2:hover::before {
-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+.button-2:hover span {
+  color: var(--green-7);
 }
 .button-2:active {
-transform: scale(0.98);
-transition: linear 0.2s;
+  transform: scale(0.98);
+  transition: transform 0.2s linear;
 }
 @media (max-width: 768px) {
-  .button-1 span,
-  .button-2 span {
+  .button-1 span {
     font-size: 16px;
     padding: 16px; /* maintain good touch size */
   }
-}
-@media (max-width: 768px) {
+    .button-2 span {
+    font-size: 16px;
+    padding: 14px; /* maintain good touch size */
+  }
   .button-1,
   .button-2 {
     padding: 6px 0;
@@ -563,7 +562,7 @@ nav{
     transition: 0.4s linear;
   }
   .nav-button:active{
-    transform: scale(0.98);
+    transform: scale(0.9);
 transition: linear 0.2s;
 }
 .nav-button-icon {
