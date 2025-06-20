@@ -330,7 +330,7 @@ h1 {
   transform: translate3d(100%, 0, 0);
 }
 .button-1:active {
-  transform: scale(0.98);
+  transform: scale(0.95);
   transition: linear 0.2s;
 }
  
@@ -377,7 +377,7 @@ h1 {
   color: var(--green-7);
 }
 .button-2:active {
-  transform: scale(0.98);
+  transform: scale(0.95);
   transition: transform 0.2s linear;
 }
 @media (max-width: 768px) {
@@ -562,7 +562,7 @@ nav{
     transition: 0.4s linear;
   }
   .nav-button:active{
-    transform: scale(0.9);
+    transform: scale(0.90);
 transition: linear 0.2s;
 }
 .nav-button-icon {
@@ -719,6 +719,7 @@ box-shadow: 0px 8px 16px 0px rgba(32, 32, 32, 0.05);
 .hero-buttons {
     display: flex;
   align-items: flex-start;
+  margin-top: 16px;
     gap: 8px;
 }
 @media (min-width: 768px) {
@@ -737,6 +738,11 @@ box-shadow: 0px 8px 16px 0px rgba(32, 32, 32, 0.05);
     box-sizing: border-box;
   }
   .hero-buttons .button-1{
+    width: 100%;              /* span full width */
+    max-width: none;
+    justify-content: center;  /* center text inside */
+  }
+.hero-buttons .button-2{
     width: 100%;              /* span full width */
     max-width: none;
     justify-content: center;  /* center text inside */
@@ -763,7 +769,7 @@ box-shadow: 0px 8px 16px 0px rgba(32, 32, 32, 0.05);
   position: absolute;
   bottom: 0;
   right: 0; /* ✅ Prevents overlap with text */
-  width: 50%;
+  width: 60%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -894,6 +900,14 @@ padding-left: 40px;
     display: block;
     margin: 0;
   }
+  .hero-tagline {
+   display: flex;
+  flex-direction: row;    /* lay out side-by-side */
+  flex-wrap: wrap;        /* allow wrapping when there’s no space */
+  align-items: center;
+  justify-content: center;    /* vertically center the items */
+  gap: 8px 4px;          
+}
 }
 /* #endregion */
 /* #region Index Repetitive Components */
