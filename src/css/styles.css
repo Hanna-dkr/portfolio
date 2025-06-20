@@ -8,8 +8,15 @@
     --black-1: #202020;
     --black-2: #4b4b4b;
     --black-3: #b7b7b7;
+    --gray-0: #F9FAFB;
     --gray: #F1F3F6;
-    --gray-2: #ededed;
+    --gray-2: #eaeef2;
+    --green-1: #B0E9D1;
+    --green-2: #B0E9E0;
+    --green-3: #00846C;
+    --green-4: #016E5A;
+    --green-5: #006D6D;
+    --green-6: #008080;
     --card-1: #771660;
     --card-2: #9d305b;
     --prim-1: #8a245e;
@@ -283,7 +290,7 @@ h1 {
     border-radius: 8px;
     cursor: pointer;
     border: none;
-    background: linear-gradient(45deg, var(--card-1), var(--prim-2));
+    background: linear-gradient(45deg, var(--black-1), var(--green-3));
     color: var(--white);
     overflow: hidden;
     -moz-user-select: none;
