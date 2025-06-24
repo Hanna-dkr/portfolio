@@ -1926,7 +1926,7 @@ background-color: #E2E7EB;
   justify-content: center; /* Centers horizontally */
   text-align:left; 
 overflow: hidden;
-  background: url("/img/ds_special_cover.png") no-repeat center center;
+  background: url("../img/ds_special_cover.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -1962,7 +1962,7 @@ overflow: hidden;
   justify-content: center; /* Centers horizontally */
   text-align:left; 
 overflow: hidden;
-  background: url("/img/alert_hero.png") no-repeat center center;
+  background: url("../img/alert_hero.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -1974,7 +1974,7 @@ overflow: hidden;
     min-height: auto;     /* remove forced 100vh */
     padding-top: 0px;   /* or whatever spacing you prefer */
     padding-bottom: 120px;
-    background: url("/img/ds_cover.svg") no-repeat center center;
+    background: url("../img/ds_cover.svg") no-repeat center center;
   background-size: cover;
   }
 }
@@ -2069,7 +2069,7 @@ max-width: 50%;
   max-width: none;
 width: 90%;
  z-index: 1;
- background: url("/img/ds_cover.svg");
+ background: url("../img/ds_cover.svg");
   box-shadow: 0px 10px 40px 0px rgba(50, 83, 121, 0.50); 
 }
 
@@ -2498,7 +2498,7 @@ padding: 16px;
 
 .DS-gradient {
   overflow: hidden;
-  background: url("/img/ds_cover.svg") no-repeat center center;
+  background: url("../img/ds_cover.svg") no-repeat center center;
   background-size: cover;
 }
 
@@ -2925,7 +2925,7 @@ border-radius: 8px;
 
 .cg-card--grey {
  overflow: hidden;
-  background: url("/img/ds_dark_grad.svg") no-repeat center center;
+  background: url("../img/ds_dark_grad.svg") no-repeat center center;
   background-size: cover;
   box-shadow: none;}
 
