@@ -6,7 +6,7 @@
   "scripts": {
   "build:css":   "postcss src/css/*.css --dir dist/css",
   "build:js":    "babel src/js --out-dir dist/js",
-  "copy:images": "cp -R img dist/img",
+   "copy:images": "cp -R img dist/",
   "build":       "npm run build:css && npm run build:js && npm run copy:images",
   "predeploy":   "npm run build",
   "deploy":      "gh-pages -d dist",
