@@ -414,7 +414,7 @@ h1 {
     margin-bottom: 32px;
   }
 .back-link:hover{
-  background-color: #B0E9D1;
+  background-color: var(--gray);
   transform: scale(1.05);
   transition: 0.4s linear;
 }
@@ -949,7 +949,7 @@ section {
   background-color: var(--deep-blue);
 }
 .black{
-  background-color: rgba(35, 35, 35, 0.91);
+  background-color: var(--black-1);
 }
 .container-basic{
         display: flex;
@@ -991,7 +991,7 @@ section {
 }
 
 
-.buttons-nested .button-1 span {
+.buttons-nested .button-1 span, .buttons-nested .button-2 span {
   position: relative;
   z-index: 10;
   transition: color 0.4s;
@@ -1011,7 +1011,7 @@ width: 225px;
     box-sizing: border-box;
     text-align: center;
   }
-  .buttons-nested .button-1{
+  .buttons-nested .button-1, .buttons-nested .button-2{
     width: 100%;              /* span full width */
     max-width: none;
     justify-content: center;  /* center text inside */
@@ -1177,7 +1177,7 @@ transition: 0.2s linear;
   flex-direction: row;
   justify-content: space-between; 
   align-items: stretch;
-  gap: 24px;
+  gap: 16px;
   max-width: 1160px;
   padding-top: 40px;
   margin: 0 auto;
@@ -1207,35 +1207,31 @@ align-items: stretch;
 .work-card {
       flex: 0 0 calc((100% - 2*24px)/3);
     max-width: calc((100% - 2*24px)/3);
-  background-color: var(--white);
+  background-color: var(--black-1);
   border-radius: 4px;
-  padding: 16px;
+  padding: 8px;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 16px;
-  box-shadow: 0px 5px 25px 0px rgba(50, 83, 121, 0.20);
 }
 
 @media (max-width: 1023px){
   .work-card{
     flex: 0 0 calc(50% - 12px);
-   box-shadow: 0px 5px 25px 0px rgba(50, 83, 121, 0.20);
   
-   
   }}
 @media (max-width: 768px){
   .work-card{
     max-width: 100%;
     max-height: 600px;
-   box-shadow: 0px 5px 25px 0px rgba(50, 83, 121, 0.20);
       flex: 0 0 100%;
   }}
 .work-card:hover {
-  background-color: #ffffff;
-     box-shadow: 0px 12px 22px 0px rgba(50, 83, 121, 0.3); 
+
+     border: solid 1px #D7F4E8;
   transition: 0.25s ease-in-out;
 }
 .work-link{
@@ -1245,7 +1241,7 @@ align-items: stretch;
   align-self: flex-end;
   font-size: 18px;
   font-weight: 500;
-  color: var(--black-1);
+  color: var(--white);
   padding: 12px;
   border-radius: 4px;
   cursor: pointer;
@@ -1270,6 +1266,7 @@ align-items: stretch;
     font-size: 16px; 
   }}
 .work-card:hover .work-link {
+  color: var(--black-1);
   background-color: #B0E9D1;
   transition: 0.2s linear;
 }
