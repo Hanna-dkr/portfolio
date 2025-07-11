@@ -383,6 +383,8 @@ template {
     --pastelblue: #DDE9F5;
     --pastelyellow: #FBF4DF;
     --accent: #BDDCD7;
+    --alert-chip: #006aac;
+    --ds-chip: #46854B;
     
   
      /* Global styles */
@@ -884,10 +886,6 @@ nav{
       box-shadow: 0px 12px 24px 0px rgba(32, 32, 32, 0.03);
     border-radius: 16px;
   height: 64px;
-}
-
-.DS-page nav{
-     background-color: rgba(255, 255, 255, 0.90);
 }
 
 .nav-tabs {
@@ -2002,7 +2000,7 @@ overflow: hidden;
   justify-content: center; /* Centers horizontally */
   text-align:left; 
 overflow: hidden;
-  background: url("../img/alert_hero.png") no-repeat center center;
+  background: var(--pastelblue);
   background-size: cover;
 }
 
@@ -2014,7 +2012,7 @@ overflow: hidden;
     min-height: auto;     /* remove forced 100vh */
     padding-top: 0px;   /* or whatever spacing you prefer */
     padding-bottom: 120px;
-    background: url("../img/ds_cover.svg") no-repeat center center;
+    background: var(--pastelblue);
   background-size: cover;
   }
 }
@@ -2157,6 +2155,11 @@ display: flex;
   border-radius: 0;
 }
 
+.alert-hero-img{
+  display: flex;
+  padding: 0px;
+}
+
 @media (max-width: 1023px) {
 
   #nunu-hero-img {
@@ -2171,6 +2174,11 @@ display: flex;
     object-fit: cover;       /* ✅ Crop vertically */
     object-position: center;
     display: block;
+  }
+  .alert-hero-img{
+    width: 100vw;
+    height: auto;
+    padding-top:100px;
   }
 }
 
@@ -2537,9 +2545,9 @@ padding: 16px;
 }
 
 .DS-gradient {
-  overflow: hidden;
-  background: url("../img/ds_cover.svg") no-repeat center center;
-  background-size: cover;
+
+  background: var(--pastelblue);
+ 
 }
 
 .DS-gradient-dark{
@@ -2621,7 +2629,12 @@ border-radius: 8px;
 }
 
 .cs-tagline-chip.blue {
-  background-color: #262C59; 
+  background-color: var(--alert-chip); 
+  color: var(--white);      /* top/bottom 4px, left/right 12px */
+}
+
+.cs-tagline-chip.green {
+  background-color: var(--ds-chip); 
   color: var(--white);      /* top/bottom 4px, left/right 12px */
 }
 
@@ -2909,9 +2922,7 @@ border-radius: 8px;
   gap: 16px;
   padding: 32px;
   border-radius: 8px;
-  border: 2px solid;
-  border-color: #fff;
-  box-shadow: 0px 8px 16px 0px rgba(32, 32, 32, 0.05);
+
 }
 
 .cg-cards-grow .cg-card-outline {
@@ -2920,13 +2931,14 @@ border-radius: 8px;
 
 .cg-card-outline.cg-card-outline--empty{
   border: none;
+  background: var(--white);
 }
 
 .cg-card-words{
   display: flex;
   font-size: 24px;
   font-weight: 800;
-  color: #fff;
+  color: var(--black-1);
 }
 
 /* 2 per row on tablet */
@@ -2964,10 +2976,14 @@ border-radius: 8px;
 }
 
 .cg-card--grey {
- overflow: hidden;
-  background: url("../img/ds_dark_grad.svg") no-repeat center center;
-  background-size: cover;
+
+  background: var(--white);
+ 
   box-shadow: none;}
+
+.navy{
+    color: #262C59;
+  }
 
 .card-content{
   display: flex;
@@ -4305,15 +4321,6 @@ width: 160px;
 }
 
 /* #endregion */
-
-.eliminate{
-  opacity: 0;  
-}
-
-@media (max-width: 1023px) {
-  .eliminate{
-    opacity: 100;
-  }}
 
 .cs-img-spaced{
     margin-top: 32px;
