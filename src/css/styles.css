@@ -2897,6 +2897,23 @@ margin-bottom: 24px;
   background: #262C59;
   color: #fff;
 }
+.rp-step-wide{
+  display: grid;
+   grid-template-columns: 48px 1fr;
+  gap: 24px;
+  align-items: start;
+  position: relative;
+}
+.rp-image-wide{
+   grid-column: 1 / -1;
+   padding-left: 32px;
+  text-align: left;
+}
+.rp-image-wide img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
@@ -3261,7 +3278,7 @@ margin-bottom: 24px;
   flex-direction: column;
   padding: 24px;
   gap: 16px;
-background-color:#262C59;
+background-color: var(--alert-chip);
 border-radius: 8px;
 
 }
