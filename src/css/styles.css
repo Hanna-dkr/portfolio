@@ -778,12 +778,12 @@ box-shadow: 0px 8px 16px 0px rgba(32, 32, 32, 0.05);
 .hero-header {
     display: block;
 }
-#hero-p { 
+.hero-p { 
     color: var(--black-2);
     font-size: 18px;
     padding: 0; 
 }
-#chip {
+.chip {
   display: inline-block;
   font-size: 18px;
   background-color: var(--accent);
@@ -1278,6 +1278,11 @@ align-items: stretch;
   position: relative; /* Needed for absolute fallback if required */
   overflow: visible;
 }
+@media (max-width: 1023px){
+  .work-card-1, .work-card-2, .work-card-3{
+   display: flex;
+   flex-direction: column;
+  }}
 
 .work-card-plain {
       flex: 0 0 calc((100% - 2*24px)/3);
@@ -1315,6 +1320,20 @@ align-items: stretch;
   max-width: 50%;
   min-width: 50%;
 }
+@media (max-width: 1023px){
+  .work-card-blurb{
+    padding-bottom: 0px;
+ min-width: 100%;
+ max-width: 100%;
+  }}
+  @media (max-width: 768px){
+  .work-card-blurb{
+    gap: 16px;
+    padding: 16px 16px 0px 16px;
+ min-width: 100%;
+ max-width: 100%;
+  }}
+
 .case-study-header{
   display: flex;
   flex-direction: column;
@@ -1339,13 +1358,21 @@ align-items: stretch;
   justify-content: flex-end;
   align-items: flex-end;
   margin: 0;
-
 }
 
 @media (max-width: 1023px){
   .work-card-img{
-    flex: 0 0 200px;
-    height: 200px;
+    max-width:60% ;
+    min-width: 60%;
+    padding-top: 8px;
+    align-self: flex-end;
+  }}
+  @media (max-width: 768px){
+  .work-card-img{
+    max-width:100% ;
+    min-width: 100%;
+    padding-top: 8px;
+    align-self: flex-end;
   }}
 .work-card-img-vert{
   max-height: 100%;
@@ -2875,15 +2902,20 @@ margin-bottom: 24px;
   color: var(--black-2);
   text-align: center;
 }
-
+.icon-email{
+  width: 60px;
+  height: 60px;
+}
 .contact-details a {
-  color: var(--deep-blue);
+  font-size: var(--font-m);
+  font-weight: 600;
+  color: var(--accent);
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
 .contact-details a:hover {
-  color: var(--prim-2);
+  color: var(--pastelgreen);
   text-decoration: underline;
 }
 /* #endregion */
