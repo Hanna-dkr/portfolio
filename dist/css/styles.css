@@ -2847,6 +2847,10 @@ border-radius: 8px;
   }
 }
 
+.light-green{
+  background: var(--pastelgreen);
+}
+
 .cg-copy {
   display: flex;
   flex: 1 1 0;
@@ -2987,6 +2991,12 @@ border-radius: 8px;
 
 }
 }
+
+.cg-card--green {
+
+  background: var(--pastelgreen);
+ 
+  box-shadow: none;}
 
 .cg-card--grey {
 
