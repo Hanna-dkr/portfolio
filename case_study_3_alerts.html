@@ -135,7 +135,7 @@
                                             <b>we
                                                 saw the risk of creating design debt</b> —introducing patterns that
                                             might not
-                                            scaleor <b>could lead to a fragmented user experience</b> as more alerts
+                                            scale or <b>could lead to a fragmented user experience</b> as more alerts
                                             were
                                             added over time.
                                         </p>
@@ -164,8 +164,10 @@
 
                                 <img class="cs-img round" src="img/alert_intro_1.png" alt="Notification centre mockup">
                                 <img class="cs-img round" src="img/alert_intro_2.png" alt="Notification centre mockup">
-                                <p class="cg-p-italics">We created this experience flow to map user needs alongside
-                                    system processes and clarify where key interactions should occur.
+                                <p class="cg-p-italics">Screens from the alerting framework that was designed and
+                                    shipped, showing the events and notification centre, notification preview panel, and
+                                    the priority scale developed to support consistent, context-aware alert delivery
+                                    across the platform
                                 </p>
                             </div>
                         </div>
@@ -455,7 +457,8 @@
                                     <div class="rp-image">
                                         <img src="./img/alert_approach_4.png"
                                             alt="High fidelity mockup showing an alert panel">
-                                        <p class="cg-p-italics">Important screens were mocked up in high fidelity.
+                                        <p class="cg-p-italics">Important screens and notification patterns were mocked
+                                            up in high fidelity.
                                             Handover was supported by the design system.</p>
 
                                     </div>
@@ -589,9 +592,7 @@
                     <div class="case-inner">
                         <div class="cg-container animate-on-scroll">
                             <div class="cg-description slide-up">
-                                <h2 class="cg-title slide-up delay-100">2. Mapping system events clarified alerting
-                                    touch points and user
-                                    needs</h2>
+                                <h2 class="cg-title slide-up delay-100">2. Balancing system events and user needs</h2>
                             </div>
                             <div class="cg-broad slide-up delay-200">
 
@@ -625,12 +626,14 @@
                                 </div>
                                 <div class="cg-copy">
                                     <div class="cg-text-block">
-                                        <h4 class="cg-subheader"><b>Four main user touchpoints within the interface were
-                                                identified:</b>
+                                        <h4 class="cg-subheader"><b>Mapping user tasks revealed four main touchpoints
+                                                that needed to be supported through the interface:</b>
                                         </h4>
                                         <ul>
-                                            <li class="bullet-1">Receiving an alert (how you receive it)</li>
-                                            <li class="bullet-1">Configuring what is shown (user control)
+                                            <li class="bullet-1">Receiving notifications (how users are alerted to
+                                                events)</li>
+                                            <li class="bullet-1">Configuring notifications (user ability to reduce
+                                                noise)
                                             </li>
                                             <li class="bullet-1">Responding to alerts (immediate problem solving)</li>
                                             <li class="bullet-1">Investigating events (deep problem solving)</li>
@@ -639,40 +642,84 @@
                                 </div>
                             </div>
                             <div class="cg-broad slide-up delay-200">
+                                <div class="cg-text-block">
+                                    <h4 class="cg-subheader"><b>This informed our design response:</b>
+                                    </h4>
+                                    <h4 class="cg-subheader cs-img-spaced"><b>1. Receiving notifications:</b>
+                                    </h4>
+                                    <img class="cs-img round" src="img/alert_control2.png"
+                                        alt="System diagram and early wireframes">
+                                    <p class="cg-p-italics">Above: A notification
+                                        language was
+                                        developed to indicate priority,
+                                        designed to minimise disruption to the user's workflow.
+                                    </p>
+                                </div>
+                                <div class="cg-broad slide-up delay-200">
+                                    <h4 class="cg-subheader cs-img-spaced"><b>2. Configuring notifications:</b>
+                                    </h4>
+                                    <img class="cs-img round" src="img/alert_control1.png"
+                                        alt="System diagram and early wireframes">
+                                    <p class="cg-p-italics">Above: Users were given a
+                                        way to
+                                        reduce
+                                        noise and control which system events they were alerted to.
+                                    </p>
+                                </div>
+                                <div class="cg-broad slide-up delay-200">
+                                    <h4 class="cg-subheader cs-img-spaced"><b>3. Responding to alerts:</b>
+                                    </h4>
+                                    <img class="cs-img round" src="img/alert_anatomy.png"
+                                        alt="System diagram and early wireframes">
 
-                                <img class="cs-img round" src="img/alert_control1.png"
-                                    alt="System diagram and early wireframes">
-                                <img class="cs-img round" src="img/alert_control2.png"
-                                    alt="System diagram and early wireframes">
+                                    <p class="cg-p-italics">Above: Notifications were
+                                        designed to
+                                        enable
+                                        quick problem solving, through clear communication and primary and secondary
+                                        suggested actions.
+                                    </p>
+                                </div>
+                                <div class="cg-broad slide-up delay-200">
+                                    <h4 class="cg-subheader cs-img-spaced"><b>4. Investigating events:</b>
+                                    </h4>
+                                    <img class="cs-img round" src="img/alert_eventlog.png"
+                                        alt="System diagram and early wireframes">
 
-                                <p class="cg-p-italics">We used this system diagram in engineering workshops to align on
-                                    backend processes. Wireframes were created to iterate on designs for the four key
-                                    alerts interface areas
-                                    identified.
-                                </p>
+                                    <p class="cg-p-italics">Above: Notifications surfaced
+                                        deeper event information and also provided a link to a more extensive event log
+                                    </p>
+                                </div>
+                                <div class="cg-broad slide-up delay-200">
+                                    <h4 class="cg-subheader cs-img-spaced"><b>5. We extended the design system to
+                                            include documentation for notification components and usage patterns.</b>
+                                    </h4>
+                                    <img class="cs-img round" src="img/alert_designsystem_excerpt.png"
+                                        alt="System diagram and early wireframes">
+
+                                    <p class="cg-p-italics">Above: Excerpts from the design system documentation for
+                                        Notifications
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
                 </section>
+
+
+
                 <section class="cg-section nyanga-grey">
                     <div class="case-inner">
                         <div class="cg-container animate-on-scroll">
                             <div class="cg-description">
-                                <h2 class="cg-title slide-up">3. Our early designs missed the mark - there was
-                                    misalignment
-                                    between conceptual and mental models</h2>
+                                <h2 class="cg-title slide-up">3. Design is a process: Bridging gaps between concept and
+                                    reality</h2>
                             </div>
-                            <div class="cg-broad slide-up delay-100">
-
-                                <img class="cs-img round" src="img/alert_execution_3.png"
-                                    alt="System diagram and early wireframes">
-
-                                <p class="cg-p-italics">Process work and workshop diagrams - Our early design (top left)
-                                    did not cater to the one-to-many relationship between events and alerts. We
-                                    iterated on component and screen designs to accommodate this relationship.
+                            <div class="cg-broad">
+                                <p class="cg-p">
+                                    Getting to the final designs was a process - we discovered that our early designs
+                                    were missing the mark as our conceptual model was misaligned with developer mental
+                                    models:
                                 </p>
                             </div>
-                            <div class="cg-cover slide-up delay-300">
+                            <div class="cg-cover">
                                 <div class="cg-copy">
                                     <div class="cg-text-block">
                                         <ul>
@@ -717,6 +764,20 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="cg-broad slide-up delay-100">
+
+                            <img class="cs-img-spaced round" src="img/alert_fail.png"
+                                alt="System diagram and early wireframes">
+
+                            <p class="cg-p-italics">We
+                                iterated on our early component and screen designs (above-left) to accommodate the one
+                                to many
+                                relationship between event alerts and notifications (above-right).
+                            </p>
+                        </div>
+                        <div class="cg-cover slide-up delay-300">
+
 
                         </div>
                     </div>
@@ -725,8 +786,7 @@
                     <div class="case-inner">
                         <div class="cg-container animate-on-scroll">
                             <div class="cg-description">
-                                <h2 class="cg-title slide-up">4. Bridging the gap between design guidelines and
-                                    implementation
+                                <h2 class="cg-title slide-up">4. Surfacing issues: When implementation tests the design
                                 </h2>
                             </div>
                             <div class="cg-broad slide-up delay-100">
@@ -748,7 +808,7 @@
                                 <div class="cg-copy">
                                     <div class="cg-text-block">
                                         <h4 class="cg-subheader">The problem?</h4>
-                                        <p class="cg-p">Disconnect between frontend guidance and how messages were
+                                        <p class="cg-p">A disconnect between frontend guidance and how messages were
                                             generated
                                             in the backend.</p>
                                         <p class="cg-p">A workshop with the lead engineer revealed key constraints in
@@ -756,7 +816,7 @@
                                     </div>
                                 </div>
                                 <div class="cg-copy">
-                                    <img class="cs-img round" src="img/alert_fail.png"
+                                    <img class="cs-img round" src="img/alert_correction.png"
                                         alt="Screenshots from design system">
 
                                     <p class="cg-p-italics">A workshop to clarify backend processes shed light on why
@@ -776,16 +836,7 @@
                                         apply and messages more consistent across the platform.</p>
                                 </div>
                             </div>
-                            <div class="cg-broad slide-up delay-500">
 
-                                <img class="cs-img round" src="img/alerts_execution_5.png"
-                                    alt="Screenshots from design system">
-
-                                <p class="cg-p-italics">I created extensive documentation on alert UI and communication.
-                                    This will be refined and workshopped with engineers in the future for implementation
-                                    alignment.
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </section>
