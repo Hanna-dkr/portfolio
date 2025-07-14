@@ -1514,6 +1514,9 @@ overflow: hidden;
   background: var(--pastelblue);
   background-size: cover;
 }
+.alert-hero.green {
+    background: var(--pastelgreen);
+}
 @media (max-width: 1023px) {
   .alert-hero {
     position: relative;   /* let it scroll normally */
