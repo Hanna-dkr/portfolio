@@ -3991,6 +3991,16 @@ border-radius: 8px;
 
 }
 
+.emphasised-green {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 16px;
+background-color: var(--ds-chip);
+border-radius: 8px;
+
+}
+
 /* #region Hero Animations */
 
 /* hero */
